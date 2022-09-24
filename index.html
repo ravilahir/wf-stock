@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Stock Report as on 22/09/2022</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:40%;">Products</th>
+    <th style="width:20%;">Cases</th>
+        <th style="width:20%;">Value</th>
+  </tr>
+  <thead><tr><th>
+</tr></thead>
+<tbody><tr>
+<td>NAPHTHALENE BALLS 50GM</td>
+<td align="right">2</td>
+<td align="right">6264</td>
+</tr>
+<tr>
+<td>NAPHTHALENE BALLS 100GM</td>
+<td align="right">8</td>
+<td align="right">28253</td>
+</tr>
+<tr>
+<td>NAPHTHALENE BALLS 200GM</td>
+<td align="right">8</td>
+<td align="right">28253</td>
+</tr>
+<tr>
+<td>NAPHTHALENE BALLS 500GM</td>
+<td align="right">13</td>
+<td align="right">45911</td>
+</tr>
+<tr>
+<td>NAPHTHALENE BALLS 1KG</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>NAPHTHALENE BALLS 50GM (C)</td>
+<td align="right">1</td>
+<td align="right">3348</td>
+</tr>
+<tr>
+<td>NAPHTHALENE BALLS 100GM (C)</td>
+<td align="right">3</td>
+<td align="right">10935</td>
+</tr>
+<tr>
+<td>NAPHTHALENE BALLS 200GM (C)</td>
+<td align="right">2</td>
+<td align="right">7306</td>
+</tr>
+<tr>
+<td>NAPHTHALENE BALLS 500GM (C)</td>
+<td align="right">5</td>
+<td align="right">14596</td>
+</tr>
+<tr>
+<td>AIR FRESH 50GM</td>
+<td align="right">2</td>
+<td align="right">5288</td>
+</tr>
+<tr>
+<td>AIR FRESH 75GM</td>
+<td align="right">1</td>
+<td align="right">2829</td>
+</tr>
+<tr>
+<td>AIR FRESH FLOWER 60GM</td>
+<td align="right">1</td>
+<td align="right">4406</td>
+</tr>
+<tr>
+<td>DISINFECTANT BALLS (3 PCS) -120GM</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>DISINFECTANT BALLS (5 PCS) -200GM</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>URINAL CUBES 75GM</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>URINAL CUBES 100GM</td>
+<td align="right">1</td>
+<td align="right">4329</td>
+</tr>
+<tr>
+<td>URINAL CUBES 140GM</td>
+<td align="right">10</td>
+<td align="right">40781</td>
+</tr>
+<tr>
+<td>URINAL CUBES 200GM</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>URINAL CUBES 300GM</td>
+<td align="right">1</td>
+<td align="right">3250</td>
+</tr>
+<tr>
+<td>WONDER CHALK</td>
+<td align="right">1</td>
+<td align="right">4510</td>
+</tr>
+<tr>
+<td>DEWFRESH PAPER SOAP STRIPS</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>ROOM FRESHNER 235ML</td>
+<td align="right">4</td>
+<td align="right">19596</td>
+</tr>
+<tr>
+<td>URINAL SCREENS 40GM - Regular</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>FLUSH MATIC SOLO PACK 50GM</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>FLUSH MATICTWIN PACK 100GM</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>GLUE TRAP SMALL</td>
+<td align="right">1</td>
+<td align="right">4118</td>
+</tr>
+<tr>
+<td>GLUE TRAP BIG</td>
+<td align="right">1</td>
+<td align="right">3267</td>
+</tr>
+<tr>
+<td>DISHWASHBAR 350GM</td>
+<td align="right">3</td>
+<td align="right">3953</td>
+</tr>
+<tr>
+<td>DISHWASHBAR 700GM</td>
+<td align="right">10</td>
+<td align="right">10519</td>
+</tr>
+<tr>
+<td>TOILET CLEANER 250ML</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>TOILET CLEANER 500ML</td>
+<td align="right">9</td>
+<td align="right">8340</td>
+</tr>
+<tr>
+<td>TOILET CLEANER 1LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>TOILET CLEANER 5LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>FLOOR CLEANER 250ML</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>FLOOR CLEANER 500ML</td>
+<td align="right">14</td>
+<td align="right">14939</td>
+</tr>
+<tr>
+<td>FLOOR CLEANER 1LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>FLOOR CLEANER 2LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>FLOOR CLEANER 5LTR MIX</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>METAL CLEANER 200ML</td>
+<td align="right">1</td>
+<td align="right">2619</td>
+</tr>
+<tr>
+<td>WHITE PHENYL 1LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>COLOUR PHENYL 1LTR MIX</td>
+<td align="right">9</td>
+<td align="right">7533</td>
+</tr>
+<tr>
+<td>WHITE PHENYL 5LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>COLOUR PHENYL 5LTR MIX</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>BLACK PHENYL 450ML</td>
+<td align="right">1</td>
+<td align="right">974</td>
+</tr>
+<tr>
+<td>BLACK PHENYL 5LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>GLASS CLEANER 500ML</td>
+<td align="right">3</td>
+<td align="right">3389</td>
+</tr>
+<tr>
+<td>GLASS CLEANER 5LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>DISH WASH 250ML (LIME YELLOW)</td>
+<td align="right">1</td>
+<td align="right">1477</td>
+</tr>
+<tr>
+<td>DISH WASH 500ML</td>
+<td align="right">2</td>
+<td align="right">2449</td>
+</tr>
+<tr>
+<td>DISH WASH 5LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>HANDWASH 430ML MIX</td>
+<td align="right">6</td>
+<td align="right">9979</td>
+</tr>
+<tr>
+<td>HANDWASH 5LTR (ECO-MIX)</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>LIQUID DETERGENT - 1LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>LIQUID DETERGENT - 5LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>FABRIC SOFTNER 500 ML</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>FABRIC SOFTNER 5LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>BATHROOM CLEANER 500ML</td>
+<td align="right">1</td>
+<td align="right">1037</td>
+</tr>
+<tr>
+<td>BATHROOM CLEANER 5LTR</td>
+<td align="right"></td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>BLEACH 500ML</td>
+<td align="right">3</td>
+<td align="right">4802</td>
+</tr>
+<tr>
+<td>DRAIN CLEANER 50 GM</td>
+<td align="right">4</td>
+<td align="right">15863</td>
+</tr>
+<tr>
+<td>SCALE GONE 100 GM</td>
+<td align="right">5</td>
+<td align="right">32011</td>
+</tr>
+<tr>
+<td>GLASS CLEANER 250ML</td>
+<td align="right">1</td>
+<td align="right">0</td>
+</tr>
+</tbody></table></table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
